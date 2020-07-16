@@ -57,6 +57,10 @@ li, p, a {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 @keyframes fadeInFromLeft {
 	0% {
 		opacity: 0;
@@ -141,4 +145,27 @@ li, p, a {
 	height: 70%;
 	width: 70%;
 	object-fit: contain;
+}
+
+
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tags p {
+	margin: 0 5px 5px 0;
+	padding: 2px;
+	border: solid 1px var(--color-one);
+	border-radius: 2px;
+	color: var(--color-one);
+	transition: var(--quick-transition);
+}
+
+
+.tags p:hover {
+	color: var(--color-two);
+	transition: var(--quick-transition);
+	border: solid 1px var(--color-two);
 }
